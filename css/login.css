@@ -1,0 +1,80 @@
+body{
+    background:url('./../image/houses.png');
+    background-size: cover;
+    background-position: center;
+}
+.info{
+    width: 400px;
+    height: 470px;
+    background: rgb(250, 233, 211);
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 20px 30px;
+    border-radius: 25px;
+}
+.keys{
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    margin-left: 46%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.logo{
+    width: 220px;
+    height: 120px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    fill: transparent;
+    border-radius: 15px;
+}
+h3{
+    color: rgb(50, 14, 85);
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.info div{
+    text-align: center;
+    margin-top: 40px;
+    color: rgb(50, 14, 85);
+}
+label{
+    color: rgb(50, 14, 85);
+    font-size: larger;
+    font-weight: bold;
+}
+input{
+    width: 100%;
+    margin-bottom: 5px;
+  
+}
+.text{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(82, 51, 10);
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 15px;
+}
+button{
+    border-radius:7px ;
+    padding: 10px 15px;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),
+    0 17px 50px 0 rgba(0,0,0,0.19);
+    border: none;
+    width: 200px;
+    height: 50px;
+    margin-left: 17%;
+    transition-duration: 0.4s;
+}
+button:hover{
+    color: rgb(168, 106, 25);
+}

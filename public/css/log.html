@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-Ph5zeIBXQx5H5qQU+ZgklVQtv/z+CJz/lSeQAjRkLb7Vww+9ivEyzyCJbFJzfGJfjrSpMzjEwLBRhxJzSNq3Jg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <style>
+        form {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        
+        button[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        button[type=submit]:hover {
+            background-color: #45a049;
+        }
+        
+        .eye {
+            position: relative;
+            display: inline-block;
+            font-size: 20px;
+            line-height: 20px;
+            margin-left: -25px;
+        }
+        
+        .eye input {
+            position: absolute;
+            top: 0;
+            right: -25px;
+            z-index: 1;
+            font-size: 16px;
+            cursor: pointer;
+            opacity: 0;
+        }
+        
+        .eye .icon {
+            position: absolute;
+            top: 0;
+            right: -25px;
+            line-height: 20px;
+            cursor: pointer;
+        }
+        
+        .eye input:checked~.icon:before {
+            content: "\f070";
+        }
+        
+        .eye input:not(:checked)~.icon:before {
+            content: "\f06e";
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Login Form</h2>
+
+    <form action="" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <div class="password-input-container">
+            <input type="password" id="password" name="password" required>
+            <i class="fa fa-eye password-toggle-icon" onclick="togglePassword()" aria-hidden="true"></i>
+        </div>
+        <span class="icon"></span>
+
+        <button type="submit" name="submit">Login</button>
+    </form>
+
+    <script>
+        function togglePassword() {
+            var passwordInput = document.getElementById("password");
+            var passwordToggleIcon = document.querySelector(".password-toggle-icon");
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                passwordToggleIcon.classList.remove("fa-eye");
+                passwordToggleIcon.classList.add("fa-eye-slash");
+            } else {
+                passwordInput.type = "password";
+                passwordToggleIcon.classList.remove("fa-eye-slash");
+                passwordToggleIcon.classList.add("fa-eye");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

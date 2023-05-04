@@ -1,0 +1,92 @@
+.show{
+    outline: 1px solid red;
+}
+body{
+    background:url('./../image/houses.png');
+    background-size: cover;
+    background-position: center;
+    /* filter: blur(5px); */
+}
+.keys{
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    margin-left: 46%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.logo{
+    width: 220px;
+    height: 120px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    fill: transparent;
+    border-radius: 15px;
+}
+.info{
+    width: 550px;
+    min-height: 470px;
+    background: rgb(250, 233, 211);
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 20px 30px;
+    border-radius: 25px;
+    margin-bottom: 50px;
+}
+h3{
+    color: rgb(50, 14, 85);
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.name > div{
+    width: 50%;
+}
+.name > div > label{
+    display: block;
+}
+.name{
+    display: flex;
+    /* grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between; */
+
+}
+button{
+    background-color: rgb(250, 233, 211);
+    border-radius:7px ;
+    padding: 10px 15px;
+    color: black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),
+    0 17px 50px 0 rgba(0,0,0,0.19);
+    border: none;
+    width: 200px;
+    height: 50px;
+    margin-left: 28%;
+    margin-top: 30px;
+    transition-duration: 0.4s;
+}
+label{
+    color: rgb(50, 14, 85);
+    font-size: larger;
+    font-weight: bold;
+}
+.text{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    height: 40px;
+    margin-bottom: 8px;
+    color: black;
+    font-size: 15px;
+}
+.login{
+    display: inline-block;
+    margin-left: 30%;
+    margin-top: 30px;
+}

@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Launch book_apt.php",
+            "type": "php",
+            "request": "launch",
+            "program": "${workspaceFolder}/book_apt.php",
+            "cwd": "${workspaceFolder}/salon",
+            "port": 0,
+            "runtimeExecutable": "php",
+            "runtimeArgs": [
+                "-dxdebug.start_with_request=yes"
+            ],
+            "env": {
+                "XDEBUG_MODE": "debug,coverage"
+            },
+            "externalConsole": false
+        }
+    ]
+}

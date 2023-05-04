@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tausi Beauty Center</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        .header {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .service-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 40px 0;
+        }
+        
+        .service-card {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            overflow: hidden;
+            position: relative;
+            width: 300px;
+            height: 250px;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .service-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .service-card h2 {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            font-size: 20px;
+            font-weight: 400;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .service-card p {
+            color: hsl(0, 60%, 2%);
+            font-size: 16px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .service-card:hover img {
+            transform: scale(1.1);
+            filter: blur(8px);
+        }
+        
+        .service-card:hover h2 {
+            bottom: 50%;
+        }
+        
+        .service-card:hover p {
+            opacity: 1;
+        }
+        
+        .book-now-button {
+            background-color: #8e44ad;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            display: block;
+            font-size: 20px;
+            margin: 40px auto;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            width: 200px;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .book-now-button:hover {
+            background-color: #6c3483;
+        }
+        
+        @media screen and (min-width: 768px) {
+            .service-card {
+                width: calc(50% - 40px);
+            }
+        }
+        
+        @media screen and (min-width: 992px) {
+            .service-card {
+                width: calc(33.33% - 40px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Tausi Beauty Center</h1>
+    </div>
+    <div class=service-cards ">
+        <div class="service-card ">
+        <img src="./../image/image/makeup.jpg " alt="Make Up ">
+        <h2>Make Up</h2>
+        <p>Our professional makeup artists use high-quality products to give you the perfect look for any occasion.</p>
+        </div>
+        <div class="service-card ">
+        <img src="./../image/image/facials.jpeg " alt="Facials ">
+        <h2>Facials</h2>
+        <p>Our facials are customized to your skin type and will leave you feeling refreshed and rejuvenated.</p>
+        </div>
+        <div class="service-card ">
+        <img src="./../image/image/hair.jpg " alt="Hair Services ">
+        <h2>Hair Services</h2>
+        <p>From cuts and styling to coloring and treatments, our hair services will help you achieve your desired look.</p>
+        </div>
+        <div class="service-card ">
+        <img src="./../image/image/manicure.jpg " alt="Manicure ">
+        <h2>Manicure</h2>
+        <p>Our manicure services include trimming, filing, shaping, and polishing your nails to perfection.</p>
+        </div>
+        <div class="service-card ">
+        <img src="./../image/image/pedicure.jpg " alt="Pedicure ">
+        <h2>Pedicure</h2>
+        <p>Our pedicure services include soaking, exfoliating, and moisturizing your feet, as well as trimming and polishing your toenails.</p>
+        </div>
+        <div class="service-card ">
+        <img src="./../image/image/face.jpg " alt="Face Scrubbing ">
+        <h2>Face Scrubbing</h2>
+        <p>Our face scrubbing services use gentle yet effective exfoliants to remove dead skin cells and reveal brighter, smoother skin.</p>
+        </div>
+        </div>
+        <a href="/salon/book_apt.php " class="book-now-button ">Book Now</a>
+        
+          </body>
+        </html>
